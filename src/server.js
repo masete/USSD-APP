@@ -17,16 +17,17 @@ app.post('*', (req, res) => {
   if (text == '') {
     // This is the first request. Note how we start the response with CON
     let response = `CON What would you want to check
-    1. My Account
-    2. My phone number`
+    1. Pay Tax
+    2. Mini statement`
     res.send(response)
   } else if (text == '1') {
     // Business logic for first level response
     let response = `CON Choose account information you want to view
-    1. Account number
-    2. Account balance`
+    1. Daily
+    2. Weekly 
+    3. Monthly`
     res.send(response)
-  } else if (text == '2') {
+  } else if (text == '3') {
     // Business logic for first level response
     let response = `END Your phone number is ${phoneNumber}`
     res.send(response)
