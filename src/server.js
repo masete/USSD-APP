@@ -59,10 +59,7 @@ app.post('*', (req, res) => {
   // } 
   else if (text == '2') {
     // This is a second level response where the user selected 1 in the first instance
-    let balance = '12th aug 19 500'
-                  '13th aug 19 1000'
-                  'sept 20,000/20,000'
-                  'nov 18,000/20,000'
+    let balance = '12th aug 19 500 13th aug 19 1000 sept 20,000/20,000 nov 18,000/20,000'
     // This is a terminal request. Note how we start the response with END
     let response = `END Your balance is ${balance}`
     res.send(response)
