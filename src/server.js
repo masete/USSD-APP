@@ -27,19 +27,19 @@ app.post('*', (req, res) => {
     2. Weekly 
     3. Monthly`
     res.send(response)
-  } else if(text == '1*1'){
+  } else if(text == '1*3'){
     let response = `CON Choose your tax monthly tax ammount
     1. 200,000
     2. 500,000
     3. 100,000`
     res.send(response)
-  } else if(text == '2'){
+  } else if(text == '1*2'){
     let response = `CON Choose your tax weekly tax ammount
     1. 5,000
     2. 15,000
     3. 20,000`
     res.send(response)
-  } else if(text == '3'){
+  } else if(text == '1*3'){
     let response = `CON Choose your tax monthly tax ammount
     1. 500
     2. 1,000
@@ -57,7 +57,7 @@ app.post('*', (req, res) => {
     // let response = `END Your account number is ${accountNumber}`
     // res.send(response)
   // } 
-  else if (text == '1*2') {
+  else if (text == '2') {
     // This is a second level response where the user selected 1 in the first instance
     let balance = 'NGN 10,000'
     // This is a terminal request. Note how we start the response with END
