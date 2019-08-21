@@ -16,7 +16,7 @@ app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
   if (text == '') {
     // This is the first request. Note how we start the response with CON
-    let response = `CON What would you want to check
+    let response = `CON What would you want to do
     1. Pay Tax
     2. Mini statement`
     res.send(response)
@@ -27,20 +27,20 @@ app.post('*', (req, res) => {
     2. Weekly 
     3. Monthly`
     res.send(response)
-  } else if(text == '3'){
-    let response = `CON choose your tax monthly tax ammount
+  } else if(text == '1'){
+    let response = `CON Choose your tax monthly tax ammount
     1. 200,000
     2. 500,000
     3. 100,000`
     res.send(response)
   } else if(text == '2'){
-    let response = `CON choose your tax weekly tax ammount
+    let response = `CON Choose your tax weekly tax ammount
     1. 5,000
     2. 15,000
     3. 20,000`
     res.send(response)
-  } else if(text == '1'){
-    let response = `CON choose your tax monthly tax ammount
+  } else if(text == '3'){
+    let response = `CON Choose your tax monthly tax ammount
     1. 500
     2. 1,000
     3. 1,500`
