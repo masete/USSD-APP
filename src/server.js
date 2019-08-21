@@ -39,7 +39,7 @@ app.post('*', (req, res) => {
     2. 15,000
     3. 20,000`
     res.send(response)
-  } else if(text == '1*3'){
+  } else if(text == '1*1'){
     let response = `CON Choose your tax monthly tax ammount
     1. 500
     2. 1,000
